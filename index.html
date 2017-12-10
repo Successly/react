@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="reactContainer"></div>
+    <script src="./common/react.js"></script>
+    <script src="./common/react-dom.js"></script>
+</body>
+ <script>
+        var HelloComponent =React.createClass({
+            render:function(){
+                return React.createElement('h1',null,'Hello world');
+            }
+        });
+ 
+        ReactDOM.render(
+            React.createElement(HelloComponent,null),
+            document.getElementById('reactContainer')
+        )
+    </script>
+</html>
